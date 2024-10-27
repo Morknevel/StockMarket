@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\99555\\RiderProjects\\StockMarket\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|c:\\users\\99555\\riderprojects\\stockmarket\\stockmarket\\services\\myservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|solutionrelative:stockmarket\\services\\myservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|c:\\users\\99555\\riderprojects\\stockmarket\\stockmarket\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|solutionrelative:stockmarket\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|c:\\users\\99555\\riderprojects\\stockmarket\\stockmarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|solutionrelative:stockmarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|c:\\users\\99555\\riderprojects\\stockmarket\\stockmarket\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{985B21DD-3D33-44F6-AB1E-255C3B35B2E9}|StockMarket\\StockMarket.csproj|solutionrelative:stockmarket\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StockMarket\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StockMarket\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T19:55:14.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StockMarket\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StockMarket\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:51:38.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyService.cs",
+              "DocumentMoniker": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Services\\MyService.cs",
+              "RelativeDocumentMoniker": "StockMarket\\Services\\MyService.cs",
+              "ToolTip": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Services\\MyService.cs",
+              "RelativeToolTip": "StockMarket\\Services\\MyService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:50:48.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Program.cs",
+              "RelativeDocumentMoniker": "StockMarket\\Program.cs",
+              "ToolTip": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\Program.cs",
+              "RelativeToolTip": "StockMarket\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T19:49:48.7Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
