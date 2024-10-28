@@ -1,43 +1,38 @@
-﻿@model StockMarket.Models.Stock
+﻿@model StockMarket.Models.StockTrade
 
 @{
-    ViewBag.Title = "Home";
+ ViewBag.Title = "Trading";
+ ViewBag.CurrentUrl = "~/Trade/Index";
 }
 
-<div class="box trading-panel">
 
-    <div class="flex trading-panel-flex">
+<form method="post">
+ <div class="box trading-panel">
 
-        <div id="stock-price-panel">
+  <div class="flex trading-panel-flex">
+   <div id="stock-price-panel">
 
-            <div class="stock">
-                <h1 class="stock-title">@Model.StockSymbol</h1>
-
-                <table>
-                    <tbody>
-                    <tr>
-                        <td>Current:</td>
-                        <th><small>$</small> <span class="price">@Model.CurrentPrice.ToString("N")</span></th>
-                    </tr>
-
-                    <tr>
-                        <td>High:</td>
-                        <th><small>$</small> <span class="price">@Model.HighestPrice.ToString("N")</span></th>
-                    </tr>
-
-                    <tr>
-                        <td>Low:</td>
-                        <th><small>$</small> <span class="price">@Model.LowestPrice.ToString("N")</span></th>
-                    </tr>
-
-                    <tr>
-                        <td>Open:</td>
-                        <th><small>$</small> <span class="price">@Model.OpenPrice.ToString("N")</span></th>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
+    <div class="stock">
+     <h1 class="stock-title">@Model.StockName (@Model.StockSymbol)</h1>
+     <h2 class="stock-price"><small class="text-grey">$</small> <span class="price">@Model.Price.ToString("N")</span></h2>
     </div>
-</div>
+
+    <div class="date"></div>
+   </div>
+
+
+  </div>
+ </div>
+
+
+ <input type="hidden" name="StockSymbol" id="StockSymbol" value="@Model.StockSymbol" />
+ <input type="hidden" id="FinnhubToken" value="@ViewBag.FinnhubToken" />
+
+</form>
+
+
+@section Scripts {
+ @* import the FinnhubScript.js file to update the price *@
+ <script src="~/Scripts/FinnhubScript.js">
+ </script>
+}

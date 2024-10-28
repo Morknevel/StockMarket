@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PMwnJr8a75ASvD0eZfPoe7U3b1ZOEwKwHqPOqU4QzIk=",
+  "Hash": "+vFecLVJNrl6Y8PxdEScKflHZ+KVY/4R9Ch+oClb16k=",
   "Source": "StockMarket",
   "BasePath": "_content/StockMarket",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\wwwroot\\Scripts\\FinnhubScript.js",
+      "SourceId": "StockMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\wwwroot\\",
+      "BasePath": "_content/StockMarket",
+      "RelativePath": "Scripts/FinnhubScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Scripts\\FinnhubScript.js"
+    },
     {
       "Identity": "C:\\Users\\99555\\RiderProjects\\StockMarket\\StockMarket\\wwwroot\\StyleSheet.css",
       "SourceId": "StockMarket",

@@ -8,29 +8,44 @@ namespace StockMarket.Controllers;
 public class HomeController : Controller
 {
     private readonly FinnhubService _finnhubService;
-    private readonly IOptions<TradingOptions> _tradingOptions;
-    public HomeController(FinnhubService finnhubService, IOptions<TradingOptions> tradingOptions)
+    private readonly TradingOptions _tradingOptions;
+    private readonly IConfiguration _configuration;
+
+
+    public HomeController(FinnhubService finnhubService, IOptions<TradingOptions> tradingOptions, IConfiguration configuration)
     {
         _finnhubService = finnhubService;
-        _tradingOptions = tradingOptions;
+        _configuration = configuration;
+        _tradingOptions = tradingOptions.Value;
     }
+
     [Route("/")]
     public async Task<IActionResult> Index()
     {
-        if (_tradingOptions.Value.DefaultStockSymbol == null)
+        if (string.IsNullOrEmpty(_tradingOptions.DefaultStockSymbol))
         {
-            _tradingOptions.Value.DefaultStockSymbol = "MSFT";
+            _tradingOptions.DefaultStockSymbol = "MSFT";
         }
-        Dictionary<string, object>? responseDictionary =
-            await _finnhubService.GetStockPriceQuote(_tradingOptions.Value.DefaultStockSymbol);
-        Stock stock = new()
+
+        Dictionary<string, object>? stockQuoteDictionary  =
+            await _finnhubService.GetStockPriceQuote(_tradingOptions.DefaultStockSymbol);
+        Dictionary<string, object>? companyProfileDictionary =
+            await _finnhubService.GetCompanyProfile(_tradingOptions.DefaultStockSymbol);
+
+        StockTrade stockTrade = new StockTrade()
         {
-                StockSymbol =   _tradingOptions.Value.DefaultStockSymbol,
-                CurrentPrice =Convert.ToDouble(responseDictionary["c"].ToString()),
-                HighestPrice =Convert.ToDouble(responseDictionary["h"].ToString()),
-                LowestPrice =Convert.ToDouble(responseDictionary["o"].ToString()),
-                OpenPrice = Convert.ToDouble(responseDictionary["o"].ToString())
+            StockSymbol = _tradingOptions.DefaultStockSymbol
         };
-        return View(stock);
+
+        if (companyProfileDictionary != null && stockQuoteDictionary  != null)
+        {
+            stockTrade = new StockTrade() 
+                { StockSymbol = Convert.ToString(companyProfileDictionary["ticker"]), 
+                    StockName = Convert.ToString(companyProfileDictionary["name"]), 
+                    Price = Convert.ToDouble(stockQuoteDictionary["c"].ToString()) };
+        }
+
+        ViewBag.Finnhub = _configuration["FinnhubToken"];
+        return View(stockTrade);
     }
 }
